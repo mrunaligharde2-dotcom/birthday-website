@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">💕 Birthday Celebration</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="letter.html" class="nav-link">Letter</a>
+                </li>
+                <li class="nav-item">
+                    <a href="surprise.html" class="nav-link">Surprise</a>
+                </li>
+            </ul>
+            <button class="music-toggle" id="musicToggle" title="Toggle Music">
+                🔊 Music
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="main-title">Happy Birthday! 💕</h1>
+            <p class="subtitle">A special celebration for you</p>
+            <div class="cta-buttons">
+                <a href="gallery.html" class="btn btn-primary">View Gallery</a>
+                <a href="letter.html" class="btn btn-secondary">Read Letter</a>
+                <a href="surprise.html" class="btn btn-surprise">See Surprise</a>
+            </div>
+        </div>
+        <div class="floating-balloons">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+            <div class="balloon balloon-4">🎈</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Explore This Celebration</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">📸</span>
+                <h3>Photo Gallery</h3>
+                <p>Relive beautiful memories together</p>
+                <a href="gallery.html" class="feature-link">View →</a>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">💌</span>
+                <h3>Special Letter</h3>
+                <p>A heartfelt message just for you</p>
+                <a href="letter.html" class="feature-link">Read →</a>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🎊</span>
+                <h3>Surprise</h3>
+                <p>Something special and magical awaits</p>
+                <a href="surprise.html" class="feature-link">Discover →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for your special day</p>
+        <p class="year">© 2024 Birthday Celebration</p>
+    </footer>
+
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/particles.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
