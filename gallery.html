@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Birthday Celebration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">💕 Birthday Celebration</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="letter.html" class="nav-link">Letter</a>
+                </li>
+                <li class="nav-item">
+                    <a href="surprise.html" class="nav-link">Surprise</a>
+                </li>
+            </ul>
+            <button class="music-toggle" id="musicToggle" title="Toggle Music">
+                🔊 Music
+            </button>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h1>Photo Gallery 📸</h1>
+            <p>Cherish these special moments</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item">
+                    <img src="assets/images/photo1.jpg" alt="Photo 1" data-full="assets/images/photo1.jpg">
+                    <div class="overlay">Click to enlarge</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/photo2.jpg" alt="Photo 2" data-full="assets/images/photo2.jpg">
+                    <div class="overlay">Click to enlarge</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/photo3.jpg" alt="Photo 3" data-full="assets/images/photo3.jpg">
+                    <div class="overlay">Click to enlarge</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/photo4.jpg" alt="Photo 4" data-full="assets/images/photo4.jpg">
+                    <div class="overlay">Click to enlarge</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightboxImage" src="" alt="">
+            <div class="lightbox-nav">
+                <button class="prev-image">❮</button>
+                <button class="next-image">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for your special day</p>
+        <p class="year">© 2024 Birthday Celebration</p>
+    </footer>
+
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/music.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
